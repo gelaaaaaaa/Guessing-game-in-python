@@ -1,0 +1,12 @@
+import random
+win = random.randrange(1,30)
+
+while True:
+      guess = int(input("Enter your guess: "))
+      if guess < win:
+          print ("lower")
+      elif guess > win:
+          print ("higher")
+      elif guess == win:
+          print("correct")
+          break
